@@ -1,0 +1,189 @@
+:root {
+  --fundo: #10202f;
+  --fundo-alt: #182d40;
+  --destaque: #d0342c;        /* fundos e botões (texto branco por cima) */
+  --destaque-texto: #ff7a6b;  /* versão clara para texto/ícones sobre fundo escuro */
+  --faixa: repeating-linear-gradient(-45deg, #d0342c 0 12px, #fff 12px 24px, #1f4e8c 24px 36px);
+}
+
+html {
+  scroll-padding-top: 100px; /* evita que o menu fixo cubra o título da seção */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--fundo);
+}
+
+.section-title {
+  font-family: 'Alfa Slab One', serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.text-colored {
+  color: var(--destaque-texto);
+}
+
+/* Cabeçalho */
+.navbar {
+  background-color: #0a1520;
+  overflow: hidden;
+}
+
+/* faixa de poste de barbeiro na base do menu */
+#cabecalho::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  background: var(--faixa);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: var(--destaque);
+  color: #fff;
+}
+
+.navbar-toggler {
+  border-color: var(--destaque-texto);
+}
+
+/* Seções com fundo alternado */
+#servicos,
+#fale-conosco {
+  background-color: var(--fundo-alt);
+}
+
+/* Carrossel */
+.slide {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 4rem;
+}
+
+.slide1, .slide2, .slide3 {
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .6);
+}
+
+.slide1 { background-image: linear-gradient(rgba(10, 21, 32, .6), rgba(10, 21, 32, .6)), url(images/slides/slide1.jpg); }
+.slide2 { background-image: linear-gradient(rgba(10, 21, 32, .6), rgba(10, 21, 32, .6)), url(images/slides/slide2.jpg); }
+.slide3 { background-image: linear-gradient(rgba(10, 21, 32, .6), rgba(10, 21, 32, .6)), url(images/slides/slide3.jpg); }
+
+/* Botões */
+.btn-destaque {
+  background-color: var(--destaque);
+  border-color: var(--destaque);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.btn-destaque:hover,
+.btn-destaque:focus {
+  background-color: #e0453d;
+  border-color: #e0453d;
+  color: #fff;
+}
+
+/* Serviços */
+.card-servico {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #2c4660;
+  border-top: 4px solid var(--destaque);
+  border-radius: .5rem;
+  background-color: var(--fundo);
+}
+
+.card-servico img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-servico h3 {
+  margin: 1.25rem 1.5rem .5rem;
+}
+
+.card-servico p {
+  margin: 0 1.5rem 1.5rem;
+}
+
+/* Tabela de preços (abas) */
+.nav-precos .nav-link {
+  color: var(--destaque-texto);
+  text-decoration: none;
+}
+
+.nav-precos .nav-link.active {
+  background-color: var(--destaque);
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.lista-precos li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .9rem 0;
+  border-bottom: 1px dashed #2c4660;
+  font-size: 1.1rem;
+}
+
+.preco {
+  color: var(--destaque-texto);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Contato */
+.social-links {
+  padding: 0;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links li a {
+  text-decoration: none;
+}
+
+/* Rodapé */
+.rodape {
+  position: relative;
+  background-color: #0a1520;
+}
+
+.rodape::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: var(--faixa);
+}
+
+@media (max-width: 767px) {
+  .slide {
+    min-height: 320px;
+    padding: 2rem 3rem;
+  }
+}

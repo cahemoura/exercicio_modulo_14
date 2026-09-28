@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Navalha</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+  <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+    <div class="container">
+      <h1 class="navbar-brand m-0 section-title">Barbearia Navalha</h1>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+        <ul class="nav nav-pills d-block d-md-flex">
+          <li class="nav-item fw-bold">
+            <a href="#sobre-a-barbearia" class="nav-link"><i class="bi bi-house-door me-1"></i>Sobre a barbearia</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#servicos" class="nav-link"><i class="bi bi-scissors me-1"></i>Serviços</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#precos" class="nav-link"><i class="bi bi-cash-coin me-1"></i>Tabela de preços</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#fale-conosco" class="nav-link"><i class="bi bi-chat-left-text me-1"></i>Agende seu horário</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre-a-barbearia">
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <div class="slide slide1">
+              <div>
+                <h2 class="section-title">Corte e barba com hora marcada</h2>
+                <p class="mb-4">Chegou, sentou, saiu alinhado. Sem fila e sem pressa.</p>
+                <a href="#fale-conosco" class="btn btn-destaque btn-lg fw-bold">Agendar horário</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <div class="slide slide2">
+              <div>
+                <h2 class="section-title">Tradição de poste e navalha</h2>
+                <p class="mb-4">O jeito clássico de cuidar do visual, com atendimento de hoje.</p>
+                <a href="#fale-conosco" class="btn btn-destaque btn-lg fw-bold">Agendar horário</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <div class="slide slide3">
+              <div>
+                <h2 class="section-title">Um espaço com história</h2>
+                <p class="mb-4">Cadeiras confortáveis, música baixa e tempo de sobra para relaxar.</p>
+                <a href="#fale-conosco" class="btn btn-destaque btn-lg fw-bold">Agendar horário</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" aria-label="Slide anterior">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next" aria-label="Próximo slide">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+
+      <div class="pt-5 pb-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <img src="images/barbearia.jpg" class="d-block w-100 rounded" alt="Barbeiro modelando o cabelo de um cliente">
+            </div>
+            <div class="col-md-7 mt-4 mt-md-0">
+              <h2 class="section-title">Sobre a barbearia</h2>
+              <p>
+                Desde 2015 cuidamos do visual de quem passa pela nossa cadeira. Somos uma equipe pequena, com barbeiros que gostam do ofício e não têm pressa de terminar o serviço.
+              </p>
+              <h3 class="section-title">Sobre o espaço</h3>
+              <p>
+                Um ambiente tranquilo, com música baixa e cadeiras confortáveis, pensado para você relaxar enquanto é atendido.
+              </p>
+              <ul>
+                <li>Atendimento com hora marcada</li>
+                <li>Ambiente climatizado e Wi-Fi grátis</li>
+                <li>Cerveja gelada e café por conta da casa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center">Para todos os estilos</h2>
+        </div>
+        <div class="row mt-4 g-4">
+          <div class="col-md-4">
+            <div class="card-servico">
+              <img src="images/servicos/corte.jpg" alt="Degradê sendo finalizado com escova e secador" loading="lazy">
+              <h3 class="section-title text-colored fs-4">Corte de cabelo</h3>
+              <p>Social, degradê, navalhado ou infantil. Você mostra a referência e a gente adapta ao formato do seu rosto.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-servico">
+              <img src="images/servicos/barba.jpg" alt="Barba sendo feita na navalha" loading="lazy">
+              <h3 class="section-title text-colored fs-4">Barba na navalha</h3>
+              <p>Toalha quente, óleo pré-barba e acabamento na navalha para uma barba desenhada e sem irritação.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-servico">
+              <img src="images/servicos/extras.jpg" alt="Aplicação de luzes com papel alumínio" loading="lazy">
+              <h3 class="section-title text-colored fs-4">Cuidados extras</h3>
+              <p>Sobrancelha, hidratação capilar, luzes e limpeza de pele para fechar o visual com calma.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="precos" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center mb-5">Tabela de preços</h2>
+        </div>
+        <div class="row">
+          <aside class="col-md-3 mb-4 mb-md-0">
+            <nav class="nav nav-pills flex-column nav-precos">
+              <button type="button" data-bs-toggle="tab" data-bs-target="#cabelo" class="fw-bold text-start nav-link active">Cabelo</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#barba" class="fw-bold text-start nav-link">Barba</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#combos" class="fw-bold text-start nav-link">Combos</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#extras" class="fw-bold text-start nav-link">Extras</button>
+            </nav>
+          </aside>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane active" id="cabelo">
+                <ul class="lista-precos list-unstyled">
+                  <li><span>Corte social</span><span class="preco">R$ 45,00</span></li>
+                  <li><span>Degradê</span><span class="preco">R$ 50,00</span></li>
+                  <li><span>Corte infantil (até 10 anos)</span><span class="preco">R$ 35,00</span></li>
+                  <li><span>Pigmentação</span><span class="preco">R$ 40,00</span></li>
+                </ul>
+              </div>
+              <div class="tab-pane" id="barba">
+                <ul class="lista-precos list-unstyled">
+                  <li><span>Barba completa</span><span class="preco">R$ 35,00</span></li>
+                  <li><span>Barba com toalha quente</span><span class="preco">R$ 40,00</span></li>
+                  <li><span>Acabamento (pezinho)</span><span class="preco">R$ 15,00</span></li>
+                  <li><span>Sobrancelha</span><span class="preco">R$ 15,00</span></li>
+                </ul>
+              </div>
+              <div class="tab-pane" id="combos">
+                <ul class="lista-precos list-unstyled">
+                  <li><span>Corte + barba</span><span class="preco">R$ 75,00</span></li>
+                  <li><span>Corte + barba + sobrancelha</span><span class="preco">R$ 85,00</span></li>
+                  <li><span>Pai e filho (dois cortes)</span><span class="preco">R$ 80,00</span></li>
+                </ul>
+              </div>
+              <div class="tab-pane" id="extras">
+                <ul class="lista-precos list-unstyled">
+                  <li><span>Hidratação capilar</span><span class="preco">R$ 30,00</span></li>
+                  <li><span>Limpeza de pele</span><span class="preco">R$ 40,00</span></li>
+                  <li><span>Luzes / platinado</span><span class="preco">R$ 120,00</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fale-conosco" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center mb-4">Agende seu horário</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                <input type="text" id="nome" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="telefone" class="form-label fw-bold">Seu telefone (WhatsApp)</label>
+                <input type="tel" id="telefone" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="servico" class="form-label fw-bold">Serviço desejado</label>
+                <select id="servico" class="form-select" required>
+                  <option value="">Escolha um serviço</option>
+                  <option>Corte de cabelo</option>
+                  <option>Barba</option>
+                  <option>Corte + barba</option>
+                  <option>Pai e filho</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label fw-bold">Dia e horário de preferência</label>
+                <textarea id="mensagem" class="form-control" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-destaque fw-bold">Enviar pedido</button>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <h3 class="section-title fs-4 text-colored"><i class="bi bi-hand-thumbs-up-fill"></i> Redes sociais</h3>
+              <ul class="social-links">
+                <li class="fs-5"><a href="#" aria-label="Facebook"><i class="bi bi-facebook text-colored"></i></a></li>
+                <li class="fs-5 ms-2 me-2"><a href="#" aria-label="Instagram"><i class="bi bi-instagram text-colored"></i></a></li>
+                <li class="fs-5"><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp text-colored"></i></a></li>
+              </ul>
+            </div>
+            <div class="row mt-4">
+              <h3 class="section-title fs-4 text-colored"><i class="bi bi-geo-fill"></i> Endereço</h3>
+              <p>Rua da Barbearia, 123 - Bairro - Cidade/UF</p>
+            </div>
+            <div class="row mt-4">
+              <h3 class="section-title fs-4 text-colored"><i class="bi bi-clock-fill"></i> Horário</h3>
+              <p class="mb-1">Terça a sexta: 9h às 20h</p>
+              <p>Sábado: 8h às 18h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape text-center py-4 text-secondary">
+    &copy; 2026 Barbearia Navalha. Todos os direitos reservados.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
